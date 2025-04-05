@@ -1,0 +1,19 @@
+local BloxFlipProtection = {}
+BloxFlipProtection.__index = BloxFlipProtection
+
+-- Anti-Exploit Configuration
+local exploitSignatures = {
+    -- Dark Dex Detection
+    ["Dark Dex"] = {
+        "getscripts",
+        "dexexplorer",
+        "dextab",
+        "rconsoleprint",
+        "rconsolename"
+    },
+    
+    -- Infinite Yield Detection
+    ["Infinite Yield"] = {
+        "iyfly",
+
+-- Still in working :/
